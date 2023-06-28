@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/app.css" />
+
+    <script src="./assets/scripts/vendor.js" defer></script>
+    <script src="./assets/scripts/app.js" defer></script>
+
+    <!-- Yes, we have added the script in the html but as we can see that the page first reloades the alert message rather than showing the page so to make the page visible first we can copy the script tag and paste it into the body section. That's when the page will load first and the message will be shown second.
+    We will paste the script into the body. 'App.js' -->
+
+    <!-- I am studying via Udemy so this code will have to be the center point of the lecture(section), so if there is a comment written and then if i clear the code, donot get confused, it is just for the practice. Eg., The comment written above is about a message being shown, but after the lecture was over i had to clear that code. But the comment is strictly for the understanding purpose.  -->
+  </head>
+  <body>
+    <header>
+      <h1>The Unconventional Calculator</h1>
+    </header>
+
+    <section id="calculator">
+      <input type="number" id="input-number" />
+      <div id="calc-actions">
+        <button type="button" id="btn-add">+</button>
+        <button type="button" id="btn-subtract">-</button>
+        <button type="button" id="btn-multiply">*</button>
+        <button type="button" id="btn-divide">/</button>
+      </div>
+    </section>
+    <section id="results">
+      <h2 id="current-calculation">0</h2>
+      <h2>Result: <span id="current-result">0</span></h2>
+    </section>
+  </body>
+</html>
